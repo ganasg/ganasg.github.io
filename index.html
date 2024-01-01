@@ -1,7 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name - Profile</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    #container {
+      display: flex;
+    }
+
+    #left-panel {
+      flex: 1;
+      background-color: #f1f1f1;
+      padding: 20px;
+      text-align: center;
+    }
+
+    #profile-picture {
+      border-radius: 50%;
+      max-width: 100px;
+      margin-bottom: 10px;
+    }
+
+    #profile-description {
+      margin-bottom: 20px;
+    }
+
+    #social-links {
+      display: flex;
+      justify-content: center;
+    }
+
+    #social-links a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
+    }
+
+    #top-panel {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      flex-basis: 200px; /* Fixed width for the top panel */
+    }
+
+    #navigation-links {
+      display: flex;
+      justify-content: space-around;
+      list-style: none;
+      padding: 0;
+    }
+
+    #navigation-links a {
+      text-decoration: none;
+      color: #fff;
+    }
+  </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+  <div id="container">
+    <div id="left-panel">
+      <img id="profile-picture" src="your_profile_picture.jpg" alt="Profile Picture">
+      <div id="profile-description">One-line profile description</div>
+      <div id="social-links">
+        <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/" target="_blank">GitHub</a>
+      </div>
+    </div>
+    <div id="top-panel">
+      <h1>Your Name</h1>
+      <ul id="navigation-links">
+        <li><a href="#work-experience">Work Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#awards">Awards</a></li>
+      </ul>
+    </div>
+  </div>
 </body>
 </html>
