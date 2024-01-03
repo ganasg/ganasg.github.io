@@ -1,86 +1,109 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name - Profile</title>
   <style>
+    /* Add your custom CSS styles here */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
     }
 
-    #container {
-      display: flex;
-    }
-
-    #left-panel {
-      flex: 1;
-      background-color: #f1f1f1;
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
       padding: 20px;
-      text-align: center;
     }
 
-    #profile-picture {
-      border-radius: 50%;
-      max-width: 100px;
-      margin-bottom: 10px;
-    }
-
-    #profile-description {
+    .profile {
+      display: flex;
+      align-items: center;
+      background-color: #f0f0f0;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
       margin-bottom: 20px;
     }
 
-    #social-links {
-      display: flex;
-      justify-content: center;
+    .profile-image {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 20px;
     }
 
-    #social-links a {
-      margin: 0 10px;
-      text-decoration: none;
-      color: #333;
+    .profile-name {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
     }
 
-    #top-panel {
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-      flex-basis: 200px; /* Fixed width for the top panel */
+    .profile-location {
+      color: #999;
+      margin-bottom: 10px;
     }
 
-    #navigation-links {
-      display: flex;
-      justify-content: space-around;
+    .profile-section {
+      margin-bottom: 20px;
+    }
+
+    .profile-section h3 {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .profile-section ul {
       list-style: none;
       padding: 0;
+      margin: 0;
     }
 
-    #navigation-links a {
-      text-decoration: none;
-      color: #fff;
+    .profile-section li {
+      margin-bottom: 5px;
+    }
+
+    .profile-section li:before {
+      content: "•";
+      color: #999;
+      margin-right: 5px;
     }
   </style>
 </head>
 <body>
-  <div id="container">
-    <div id="left-panel">
-      <img id="profile-picture" src="your_profile_picture.jpg" alt="Profile Picture">
-      <div id="profile-description">One-line profile description</div>
-      <div id="social-links">
-        <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
-        <a href="https://github.com/" target="_blank">GitHub</a>
+  <div class="container">
+    <div class="profile">
+      <img src="profile-image.jpg" alt="Profile Image" class="profile-image">
+      <div class="profile-info">
+        <div class="profile-name">Ganapathy G</div>
+        <div class="profile-location">Cary,NC United States</div>
+        <div class="profile-bio">AI, Data & Analytics Leader and Advisor</div>
       </div>
     </div>
-    <div id="top-panel">
-      <h1>Your Name</h1>
-      <ul id="navigation-links">
-        <li><a href="#work-experience">Work Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#awards">Awards</a></li>
+    <div class="profile-section">
+      <h3>Work Experience</h3>
+      <ul>
+        <li>Associate Director at Novartis (2019 - Present)</li>
+        <li>Sr Manager at Cognizant (2005 - 2019)</li>
+      </ul>
+    </div>
+    <div class="profile-section">
+      <h3>Projects</h3>
+      <ul>
+        <li>RAG using open source models - A simple QnA RAG application leveraging llama 7b & GPJ LLM models.</li>
+        <li>RAG using Azure OpenAI - A simple QnA RAG application leveraging Azure OpenAI models.</li>
+      </ul>
+    </div>
+    <div class="profile-section">
+      <h3>Blogs</h3>
+      <ul>
+        <li>Copilot era - An enterprise perspective</li>
+        <li>Organizational Politics - Should we Ignore or Embrace?</li>
+      </ul>
+    </div>
+    <div class="profile-section">
+      <h3>Key Achievements</h3>
+      <ul>
+        <li>Data Platform Modernizaton Journey - Presented as Speaker on Global Snowflake Summit 2022</li>
       </ul>
     </div>
   </div>

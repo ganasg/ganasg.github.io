@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name - Profile</title>
+  <style>
+    /* Resetting some default styles */
+    body, h1, ul, li {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Header Styles */
+    #header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #f1f1f1; /* Same color as left panel */
+      color: #333; /* Text color in header */
+      padding: 20px;
+      text-align: left;
+    }
+
+    #name {
+      margin: 0;
+    }
+
+    /* Navigation Styles */
+    #nav-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px; /* Adjust the spacing between items */
+    }
+
+    #horizontal-nav {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      background-color: #f1f1f1; /* Same color as left panel */
+    }
+
+    #horizontal-nav a {
+      text-decoration: none;
+      color: #333;
+      padding: 10px;
+    }
+
+    /* Main Container Styles */
+    #container {
+      display: flex;
+    }
+
+    /* Left Panel Styles */
+    #left-panel {
+      flex-basis: 200px;
+      background-color: #f1f1f1;
+      padding: 20px;
+      text-align: center;
+    }
+
+    #profile-picture-container {
+      text-align: center;
+    }
+
+    #profile-picture {
+      border-radius: 50%;
+      max-width: 100px;
+      margin-bottom: 10px;
+    }
+
+    #profile-description {
+      margin-bottom: 20px;
+    }
+
+    #social-links {
+      display: flex;
+      flex-direction: column;
+    }
+
+    #social-links a {
+      margin-bottom: 10px;
+      text-decoration: none;
+      color: #333;
+    }
+
+    /* Vertical Navigation Styles */
+    #vertical-nav {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      background-color: #f1f1f1; /* Same color as left panel */
+    }
+
+    #vertical-nav a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div id="header">
+    <h1 id="name">Ganapathy G</h1>
+    <div id="nav-container">
+      <ul id="horizontal-nav">
+        <li><a href="#work-experience">Work Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#awards">Awards</a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="container">
+    <div id="left-panel">
+      <div id="profile-picture-container">
+        <img id="profile-picture" src="your_profile_picture.jpg" alt="Profile Picture">
+      </div>
+      <div id="profile-description">One-line profile description</div>
+      <div id="social-links">
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+
+    </div>
+    <!-- Content for the right side can be added here -->
+  </div>
+</body>
+</html>
